@@ -1,0 +1,441 @@
+
+.fang_logo {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.layout ul {
+    list-style: none;
+    position: absolute;
+    width: auto;
+    top: 15px;
+    left: 500px;
+    display: inline-block;
+    text-align: center;
+  }
+  .layout li {
+    float: left;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 2%;
+
+  }
+.rectangle{
+position: absolute;
+width: 140px;
+height: 40px;
+left: 425px;
+top: -2px;
+
+background: #EB4444;
+box-shadow: 0px 20px 13px rgba(235, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(235, 68, 68, 0.03);
+border-radius: 10px;
+  }
+
+.sign_up{
+position: absolute;
+width: 69px;
+height: 22.34px;
+left: 25px;
+top: 15%;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 27px;
+text-decoration: none;
+color: white;
+
+}
+
+.form_page{
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 40px rgba(217, 217, 217, 0.39);
+  width: 320px;
+  height: 400px;
+  top: 50px;
+  left: 445px;
+
+}
+.signin_text{
+position: absolute;
+width: 102px;
+height: 10;
+left: 50px;
+top: 10px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 45px;
+
+color: #080A3C;
+}
+
+
+.form_inputtt input{
+position: absolute;
+background: #FFF6F6;
+border-radius: 8px;
+position: absolute;
+left: 17%;
+right: 33.06%;
+top: 16%;
+bottom: 30.65%;
+width: 200px;
+height: 30px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 22px;
+
+color: #EB4444;
+}
+
+.form_inputt input{
+position: absolute;
+left: 17%;
+top: 10px;
+
+background: #FFF7F7;
+border-radius: 8px;
+position: absolute;
+width: 200px;
+height: 30px;
+left: 17%;
+top: 30%;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 22px;
+
+color: #EB4444;
+
+}
+
+.submit_button{
+position: absolute;
+bottom: 3%;
+width: 210px;
+height: 35px;
+background: #EB4444;
+box-shadow: 0px 4px 30px rgba(235, 68, 68, 0.4);
+border-radius: 9px;
+position: absolute;
+left: 17%;
+right: 30%;
+top: 51%;
+bottom: 28.81%;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 24px;
+color: #FFFFFF; 
+}
+
+.form_inputt li{
+position: absolute;
+width: 120px;
+height: 20px;
+left: 150px;
+top: 159px;
+list-style: none;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 20px;
+color: #B0B0B0;
+}
+
+.continue_with{
+position: absolute;
+width: 130px;
+height: 24px;
+left: 120px;
+top: 260px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+
+color: #B5B5B5;
+}
+
+.no_account{
+position: absolute;
+left: 22%;
+right: 10%;
+top: 85%;
+bottom: 10%;
+
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+
+color: #373737;
+}
+.no_account li{
+list-style: none;
+position: absolute;
+left: 48%;
+right: 3%;
+top: -12px;
+bottom: 10%;
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color:#000000;
+}
+
+.fb_logo{
+position: absolute;
+width: 25px;
+height: 25px;
+left: 35%;
+top: 73%;
+}
+
+.apple_logo{
+position: absolute;
+left: 46%;
+right: 48.57%;
+top: 73%;
+bottom: 28.08%;
+width:25px;
+
+}
+
+.google{
+position: absolute;
+width: 25px;
+height: 25px;
+left: 57%;
+top: 73%;
+
+}
+
+
+@media (min-width:480px) and (max-width: 768px) {
+  .fang_logo {
+    max-width: 180px;
+    margin-top: 3%;
+    margin-left: 5%;
+    
+  }
+  .layout ul {
+    flex-direction: column;
+    top: 90px;
+    left: 5%;
+    text-align: left;
+    
+    
+  }
+  .layout li {
+    float: none;
+    margin: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5%;
+  }
+  .rectangle {
+    left: 69%;
+    transform: translateX(-50%);
+    top: 130px;
+    width: 100px;
+    height: 33px;
+  }
+  .sign_up {
+    font-size: 14px;
+    line-height: 20px;
+    left: 25px;
+    top: 15%;
+  }
+  .form_page {
+    width: 320px;
+   height: 400px;
+    top: 50px;
+    left: 35%;
+   
+
+  }
+  .form_inputtt input {
+    width: 200px;
+    left: 15%;
+    right: 0;
+    top: 60px;
+    bottom: auto;
+  }
+  .form_inputt input {
+    width: 200px;
+    left: 15%;
+    right: 0;
+    top: 125px;
+    bottom: auto;
+  }
+  .submit_button{
+    font-size: 12px;
+    line-height: 24px;
+    width: 63%;
+    margin-top: 5%;
+    left: 15.5%;
+  }
+  .form_inputt li {
+    font-size: 10px;
+    left: 164px;
+    top: 155px;
+  }
+  .continue_with {
+    width: 100px;
+    height: 20px;
+    left: 110px;
+    top: 275px;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .no_account {
+    left: 19.5%;
+    right: 5%;
+    top: 87%;
+    bottom: 5%;
+    font-size: 11.5px;
+  }
+  .no_account li {
+    left: 46%;
+    right: 2%;
+    top: -17px;
+    bottom: 8%;
+    font-size: 11.5px;
+  }
+  .fb_logo {
+    width: 25px;
+    height: 25px;
+    left: 33.5%;
+    top: 75.5%;
+  }
+  .apple_logo {
+    width: 20px;
+    left: 44.5%;
+    top: 76%;
+  }
+  .google {
+    width: 25px;
+    height: 25px;
+    left: 53%;
+    top: 75.3%;
+  }
+} 
+
+@media (max-width: 480px) {
+  .fang_logo {
+    width: 116px;
+    height: 28px;
+    margin-top: 75px;
+    margin-left: 115px;
+  }
+    .layout ul {
+      display: none;
+    }
+   /* .signin_text{
+      font-size: 22px;
+      top: 32px;
+      left: 40px;
+    } */
+    
+    .form_page {
+      width: 290px;
+      height: 390px;
+      top:  55px;
+      left: 37px;
+      
+     
+    }
+    /*.form_inputtt input {
+      font-size: 10px;
+      line-height: 24px;
+      width: 67%;
+      margin-left: -1%;
+      margin-top: 12%;
+      font-size: 10px;
+
+    }
+    .form_inputt input {
+      line-height: 24px;
+      width: 67%;
+      margin-left: -2%;
+      margin-top: 13%;
+      font-size: 10px;
+
+    }
+    .submit_button{
+      font-size: 12px;
+      line-height: 24px;
+      width: 70%;
+      margin-left: -4%;
+      margin-top: 11%;
+    }
+    .form_inputt li {
+      font-size: 11px;
+      left: 175px;
+      top:205px;
+    }
+    
+    .no_account {
+      left: 20%;
+      right: 2%;
+      top: 90%;
+      bottom: 2%;
+      font-size: 12px;
+    }
+    
+    .fb_logo {
+      width: 25px;
+      height: 27px;
+      left: 35%;
+      top: 77%;
+    }
+    .apple_logo {
+      width: 20px;
+      left: 45%;
+      top: 78%;
+    }
+    .google {
+      width: 23px;
+      height: 29px;
+      left: 53%;
+      top: 77%;
+    }*/
+    .continue_with {
+      width: 80px;
+      height: 16px;
+      left: 108px;
+      top: 260px;
+      font-size: 11px;
+      line-height: 16px;
+    }
+    .no_account li {
+      left: 51%;
+      right: 1%;
+      top: -11px;
+      bottom: 6%;
+      font-size: 12px;
+    }
+}

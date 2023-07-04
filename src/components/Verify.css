@@ -1,0 +1,246 @@
+.fang_logo_verify{
+    width: 220px;
+    height: 50px;
+   margin-top:2%;
+    margin-left: 5%;
+}
+.layout_verify ul {
+    list-style: none;
+    position: absolute;
+    width: auto;
+    top: 15px;
+    left: 500px;
+    display: inline-block;
+    text-align: center;
+  }
+  .layout_verify li {
+    float: left;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 2%;
+
+  }
+.rectangle_verify{
+position: absolute;
+width: 140px;
+height: 40px;
+left: 424px;
+top: -2px;
+
+background: #EB4444;
+box-shadow: 0px 20px 13px rgba(235, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(235, 68, 68, 0.03);
+border-radius: 10px;
+  }
+
+.sign_up_verify{
+position: absolute;
+width: 69px;
+height: 22.34px;
+left: 14px;
+top: 11%;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-size: 5px;
+
+
+}
+
+.form_page_verify{
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 40px rgba(217, 217, 217, 0.39);
+  border-radius: 20px;  
+  width: 320px;
+  height: 300px;
+  top: 60px;
+  left: 445px;
+
+}
+.verifycode{
+position: absolute;
+width: 251px;
+height: 45px;
+left: 38px;
+top: 30px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 45px;
+
+color: black;
+}
+
+.verifycode_text{
+position: absolute;
+width: 270px;
+height: 43px;
+left: 39.5px;
+top: 75px;
+right: 100px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-size: 10px;
+
+
+color: black;
+}
+form .input-field {
+  flex-direction: row;
+  column-gap: 15px;
+  margin-left: 45px;
+  right: 700px;
+  margin-top: 130px;
+  
+}
+.input-field input {
+  height: 35px;
+  width: 35px;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+ 
+}
+.input-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+
+
+.submit_button_verify{
+position: absolute;
+bottom: 3%;
+width: 210px;
+height: 35px;
+
+background: #EB4444;
+box-shadow: 0px 4px 30px rgba(235, 68, 68, 0.4);
+border-radius: 9px;
+
+
+/* Login */
+
+position: absolute;
+left: 13%;
+right: 30%;
+top: 68%;
+bottom: 28.81%;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 24px;
+
+color: #FFFFFF; 
+
+}
+
+.no_account_verify{
+  position: absolute;
+  left: 20%;
+  right: 10%;
+  top: 87%;
+  bottom: 10%;
+  
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  
+  color: #373737;
+  }
+  .no_account_verify li{
+  list-style: none;
+  position: absolute;
+  left: 46%;
+  right: 3%;
+  top: -11.5px;
+  bottom: 10%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color:#000000;
+  }
+  @media (min-width:480px) and (max-width:768px){
+      .fang_logo_verify {
+        max-width: 180px;
+        margin-top: 3%;
+        margin-left: 5%;
+        
+      }
+      .layout_verify ul {
+        flex-direction: column;
+        top: 90px;
+        left: 5%;
+        text-align: left;
+        
+        
+      }
+      .layout_verify li {
+        float: none;
+        margin: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 5%;
+      }
+      .rectangle_verify {
+        left: 69%;
+        transform: translateX(-50%);
+        top: 130px;
+        width: 100px;
+        height: 33px;
+      }
+      .sign_up_verify {
+        font-size: 10px;
+        line-height: 20px;
+        left: 15%;
+      }
+      .form_page_verify{
+          width: 320px;
+          height: 300px;
+          top: 50px;
+          left: 255px;
+        }
+      .no_account_verify li{
+          left: 120px;
+          top: -14.5px;
+        }
+    }
+  
+  @media(max-width:480px){
+    .fang_logo_verify{
+      width: 116px;
+      height: 28px;
+      margin-top: 90px;
+      margin-left: 90px;
+    }
+    .layout_verify ul{
+      display: none;
+    }
+    .form_page_verify{
+      width: 322px;
+      height: 352px;
+      top: 40px;
+      left: 15px;
+    
+    }
+  }
+    
