@@ -1,9 +1,9 @@
-import Signinform from "./components/Signinform";
-import Activation from "./components/Activation";
-import Verify from "./components/Verify";
-import ForgotPage from "./components/ForgotPage";
-import ResetForm from "./components/ResetForm";
-import SignupForm from "./components/SignupForm";
+import Signinform from "./components/SigninPage/Signinform";
+import Activation from "./components/ActivationPage/Activation";
+import Verify from "./components/VerificationPage/Verify";
+import ForgotPage from "./components/ForgotPage/ForgotPage";
+import ResetForm from "./components/ResetPage/ResetForm";
+import SignupForm from "./components/SignupPage/SignupForm";
 import {createBrowserRouter,RouterProvider} from 'react-router-dom';
 const routerr=createBrowserRouter([
   {path:'/' , element:<Signinform />},

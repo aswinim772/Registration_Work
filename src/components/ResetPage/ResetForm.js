@@ -1,5 +1,5 @@
 import React from 'react';
-import logoss from './fanglogoo.jpg';
+import logoss from '../../Assets/fanglogoo.jpg';
 import './ResetForm.css';
 
 const ResetForm =()=>{

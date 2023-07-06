@@ -1,9 +1,9 @@
 import React from 'react';
-import logoo from './fanglogoo.jpg';
+import logoo from '../../Assets/fanglogoo.jpg';
 import './SignupForm.css';
-import Googlee from './googlee.png';
-import FBOOK from './facebook_logoo.jpg';
-import Applee from './apple_logooo.png';
+import Googlee from '../../Assets/googlee.png';
+import FBOOK from '../../Assets/facebook_logoo.jpg';
+import Applee from '../../Assets/apple_logooo.png';
 const SignupForm =()=>{
  return(
    <div className="layout_signup">

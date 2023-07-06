@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './fanglogoo.jpg';
+import logo from '../../Assets/fanglogoo.jpg';
 import './Signinform.css';
-import Google from './googlee.png';
-import FB from './facebook_logoo.jpg';
-import Apple from './apple_logooo.png';
+import Google from '../../Assets/googlee.png';
+import FB from '../../Assets/facebook_logoo.jpg';
+import Apple from '../../Assets/apple_logooo.png';
 import { Link } from 'react-router-dom';
 const Signinform =()=>{
  return(

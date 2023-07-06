@@ -1,6 +1,6 @@
 import './Activation.css';
-import Flogo from './fanglogoo.jpg';
-import Vtr from './vector.jpg';
+import Flogo from '../../Assets/fanglogoo.jpg';
+import Vtr from '../../Assets/vector.jpg';
 const Activation=()=>{
     return(
         <div className='layout_active'>

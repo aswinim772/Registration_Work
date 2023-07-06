@@ -1,5 +1,5 @@
 import React from 'react';
-import logg from './fanglogoo.jpg';
+import logg from '../../Assets/fanglogoo.jpg';
 import './Verify.css';
 
 const Verify =()=>{

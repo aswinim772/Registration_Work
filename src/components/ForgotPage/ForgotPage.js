@@ -1,5 +1,5 @@
 import React from 'react';
-import logoooo from './fanglogoo.jpg';
+import logoooo from '../../Assets/fanglogoo.jpg';
 import './ForgotPage.css';
 
 const ForgotPage =()=>{
