@@ -9,8 +9,8 @@
       list-style: none;
       position: absolute;
       top: 15px;
-      left: 500px;
-      /*display: inline-block;*/
+      left: 498px;
+     display: inline-block;
       text-align: center;
     }
     .layout li {
@@ -22,22 +22,20 @@
       line-height: 27px;
       letter-spacing: 0em;
       text-align: left;
-      margin-top: 2%;
+      margin-top: 0%;
     }
-  .signin{
-    margin-top: 0;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: black;
-   
-  }
+    /*.signin_word{
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: black;
+    }
   .rectangle{
   position: absolute;
   width: 140px;
   height: 40px;
-  left: 430px;
-  top: -2px;
+  left: 400px;
+  top: -7px;
   
   background: #EB4444;
   box-shadow: 0px 20px 13px rgba(235, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(235, 68, 68, 0.03);
@@ -58,7 +56,26 @@
   line-height: 27px;
   text-decoration: none;
   color: white;
+  background: #EB4444;
+  box-shadow: 0px 20px 13px rgba(235, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(235, 68, 68, 0.03);
+  border-radius: 10px;
   
+  }*/
+  .signin_word,.sign_up {
+    text-decoration: none;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+  }
+  .sign_up{
+  background: #EB4444;
+  box-shadow: 0px 20px 13px rgba(235, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(235, 68, 68, 0.03);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
   }
 
   @media (min-width:480px) and (max-width: 768px) {
@@ -66,6 +83,7 @@
       max-width: 180px;
       margin-top: 3%;
       margin-left: 5%;
+      
       
     }
     .layout ul {
@@ -107,7 +125,13 @@
       margin-top: 75px;
       margin-left: 115px;
     }
-      .layout ul {
-        display: none;
-      }
+  ul.other_options {
+    display: none;
   }
+
+  
+}
+
+ 
+
+

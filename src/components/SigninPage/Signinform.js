@@ -12,7 +12,7 @@ const Signinform =()=>{
         <Header />
         <div className="form_page">
         <div className="inner_form">
-        <span className='signin_text'><b>Sign in</b></span>
+        <span className='signin_textt'><b>Sign in</b></span>
         <form>
         <div className='form_inputtt'>
         <input

@@ -90,27 +90,27 @@ color: #000000;
 @media(max-width:480px){
 .vector_logo{
   position: absolute;
-  width: 280px;
-  height: 280px;
-  left: 330px;
-  top: 650px;
+  width: 100px;
+  height: 100px;
+  left: 125px;
+  top: 220px;
   
 }
 .active_text{
   position: absolute;
-  margin-left:-165px;
-  top: 900px;
-  font-size: 38px;
+  margin-left:-350px;
+  top: 310px;
+  font-size: 15px;
  
   }
   .add_text{
   position: absolute;
   width: 883px;
   height: 90px;
-  margin-left: -130px;
+  margin-left: -425px;
   margin-right: 360px;
-  top: 950px;
-  font-size: 35px;
+  top: 340px;
+  font-size: 12px;
   
   }
   
@@ -118,9 +118,9 @@ color: #000000;
   position: absolute;
   width: 883px;
   height: 90px;
-  left: 0px;
-  top: 1020px;
-  font-size: 35px;
+  left: -285px;
+  top: 350px;
+  font-size: 12px;
   margin: 20px;
   
   }
@@ -131,9 +131,9 @@ color: #000000;
   position: absolute;
   width: 883px;
   height: 90px;
-  left: 0px;
-  top: 40px;
-  font-size: 35px;
+  left: -15px;
+  top: -3px;
+  font-size: 12px;
   margin: 20px;
   }
 
