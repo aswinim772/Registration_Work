@@ -1,0 +1,113 @@
+.fang_logo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .layout ul {
+      list-style: none;
+      position: absolute;
+      top: 15px;
+      left: 500px;
+      /*display: inline-block;*/
+      text-align: center;
+    }
+    .layout li {
+      float: left;
+      margin: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 2%;
+    }
+  .signin{
+    margin-top: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+   
+  }
+  .rectangle{
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  left: 430px;
+  top: -2px;
+  
+  background: #EB4444;
+  box-shadow: 0px 20px 13px rgba(235, 68, 68, 0.05), 0px 8.14815px 6.51852px rgba(235, 68, 68, 0.03);
+  border-radius: 10px;
+    }
+  
+  .sign_up{
+  position: absolute;
+  width: 69px;
+  height: 22.34px;
+  left: 30px;
+  top: 15%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+  text-decoration: none;
+  color: white;
+  
+  }
+
+  @media (min-width:480px) and (max-width: 768px) {
+    .fang_logo {
+      max-width: 180px;
+      margin-top: 3%;
+      margin-left: 5%;
+      
+    }
+    .layout ul {
+      flex-direction: column;
+      top: 90px;
+      left: 5%;
+      text-align: left;
+      
+      
+    }
+    .layout li {
+      float: none;
+      margin: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 5%;
+    }
+    .rectangle {
+      left: 69%;
+      transform: translateX(-50%);
+      top: 130px;
+      width: 100px;
+      height: 33px;
+    }
+    .sign_up {
+      font-size: 14px;
+      line-height: 20px;
+      left: 23px;
+      top: 18%;
+    
+  }
+
+}
+
+  @media (max-width: 480px) {
+    .fang_logo {
+      width: 116px;
+      height: 28px;
+      margin-top: 75px;
+      margin-left: 115px;
+    }
+      .layout ul {
+        display: none;
+      }
+  }

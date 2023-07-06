@@ -12,10 +12,11 @@ const routerr=createBrowserRouter([
   {path:'/forgot' , element:<ForgotPage/>},
   {path:'/reset' , element:<ResetForm />},
   {path:'/signup' , element:<SignupForm />}
-])
+]) 
 function App() {
   return (
-    <RouterProvider router={routerr}/>
+    <RouterProvider router={routerr}/> 
+    
   );
 }
 

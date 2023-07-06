@@ -1,21 +1,13 @@
 import React from 'react';
-import logoss from '../../Assets/fanglogoo.jpg';
 import './ResetForm.css';
+import Header from '../Header/HeaderFile';
+import { Link } from 'react-router-dom';
 
 const ResetForm =()=>{
  return(
    <div className="layout_reset">
     
-        <img src={logoss} alt="fang logo" className="fang_logo_reset" />
-        <ul className='other_options_reset'>
-          <li className="home_reset">Home</li>
-          <li className="about_reset">About</li>
-          <li className="contact_reset">Contact</li>
-          <li className="signin_reset">Sign in</li>
-           <span className='rectangle_reset'>
-            <li className="sign_up_reset" style={{color:'white'}}>Sign up</li>
-          </span>
-        </ul>
+        <Header />
         <div className="form_page_reset">
           <span className='resetpassword_text'><b>Reset Password</b></span>
           <span className='addition_text_reset'>Please set a strong password by
@@ -37,11 +29,11 @@ const ResetForm =()=>{
           name="password"
           placeholder="     Re-enter new password"
           />
-          </div>
+          </div>  
             <button type="submit" className="submit_button_reset">Login</button>
           </form>
-          <span className='no_account_reset'>Don't have an account? <li><b>Sign up</b></li></span>
-      
+          <span className='no_account_reset'>Don't have an account? <Link to='/signup' className='no_account_reset_li'><b>Sign up</b></Link></span>
+          
       </div>
     </div>
     

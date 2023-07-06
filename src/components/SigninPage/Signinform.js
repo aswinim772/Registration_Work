@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from '../../Assets/fanglogoo.jpg';
 import './Signinform.css';
 import Google from '../../Assets/googlee.png';
 import FB from '../../Assets/facebook_logoo.jpg';
 import Apple from '../../Assets/apple_logooo.png';
+import Header from '../Header/HeaderFile';
 import { Link } from 'react-router-dom';
 const Signinform =()=>{
  return(
    <div className="layout">
     
-        <img src={logo} alt="fang logo" className="fang_logo" />
-        <ul className='other_options'>
-          <li className="home">Home</li>
-          <li className="about">About</li>
-          <li className="contact">Contact</li>
-          <li className="signin">Sign in</li>
-           <span className='rectangle'>
-            <Link to='/signup' className='sign_up'>Sign up</Link>
-          </span>
-        </ul>
+        <Header />
         <div className="form_page">
         <div className="inner_form">
         <span className='signin_text'><b>Sign in</b></span>
@@ -39,12 +30,12 @@ const Signinform =()=>{
           placeholder="  Password"
         />
         
-         <li>Forgot password ?</li>
+         <Link to='forgot' className='forgot_link'>Forgot password ?</Link>
         </div>
       <button type="submit" className="submit_button">Login</button>
       </form>
       <span className='continue_with'>or continue with</span>
-      <span className='no_account'>Don't have an account? <li><b>Sign up</b></li></span>
+      <span className='no_account'>Don't have an account? <Link to='signup' className='no_accountli' ><b>Sign up</b></Link></span>
       </div>
       <img className='apple_logo' src={Apple} alt="" />
       <img className='fb_logo'   src={FB}   alt="" />
