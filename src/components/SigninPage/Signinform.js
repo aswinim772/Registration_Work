@@ -6,72 +6,30 @@ import Apple from '../../Assets/apple_logooo.png';
 import Header from '../Header/HeaderFile';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios';
 const Signinform =()=>{
   const [email,setEmail]=useState('');
   const [pword,setPword]=useState('');
-  function validateFormm() {
-    if (email.length === 0) {
-      alert('Invalid Form, Email Address can not be empty')
-      return
-    }
-    if (pword.length < 8) {
-      alert(
-        'Invalid Form, Password must contain greater than or equal to 8 characters.',
-      )
-      return
-    }
-    let countUpperCase = 0
-    let countLowerCase = 0
-    let countDigit = 0
-    let countSpecialCharacters = 0
 
-    for (let i = 0; i < pword.length; i++) {
-      const specialChars = [
-        '!',
-        '@',
-        '#',
-        '$',
-        '%',
-        '^',
-        '&',
-        '*',
-      ]
-
-      if (specialChars.includes(pword[i])) {
-        countSpecialCharacters++
-      } else if (!isNaN(pword[i] * 1)) {
-        countDigit++
-      } else {
-        if (pword[i] === pword[i].toUpperCase()) {
-          countUpperCase++
-        }
-        if (pword[i] === pword[i].toLowerCase()) {
-          countLowerCase++
-        }
-      }
-    }
-
-    if (countLowerCase === 0) {
-      alert('Invalid Form, 0 lower case characters in password')
-      return
-    }
-    if (countUpperCase === 0) {
-      alert('Invalid Form, 0 upper case characters in password')
-      return
-    }
-
-    if (countDigit === 0) {
-      alert('Invalid Form, 0 digit characters in password')
-      return
-    }
-
-    if (countSpecialCharacters === 0) {
-      alert('Invalid Form, 0 special characters in password')
-      return
-    }
-      alert('Form is valid')
-  }
-
+  const handleSubmit = (e) => {
+      e.preventDefault()
+      console.log("form is submitted");
+      axios.post('http://localhost:8000/login',
+        {
+        email: email,
+        password: pword
+      })
+      .then((response)=>{
+        console.log(response.data)
+        alert("succesfully LoggedIn")
+        
+      })
+      .catch((err)=>{
+        console.log(err.message)
+        alert('error occured')
+      })  
+    
+  };
   
  return(
    <div className="layout">
@@ -80,7 +38,7 @@ const Signinform =()=>{
         <div className="form_page">
         <div className="inner_form">
         <span className='signin_textt'><b>Sign in</b></span>
-        <form>
+        <form onSubmit={handleSubmit}>
         <div className='form_inputtt'>
         <input
           type="text"
@@ -88,6 +46,7 @@ const Signinform =()=>{
           name="emailOrMobile"
           placeholder="  Enter email or Mobile number"
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         </div>
         <div className='form_inputt'>
@@ -97,12 +56,13 @@ const Signinform =()=>{
           name="password"
           placeholder="  Password"
           onChange={(e) => setPword(e.target.value)}
+          required
           
         />
         
          <Link to='forgot' className='forgot_link'>Forgot password ?</Link>
         </div>
-      <button type="submit" className="submit_button" onClick={validateFormm}>Login</button>
+      <button type="submit" className="submit_button" >Login</button>
       </form>
       <span className='continue_with'>or continue with</span>
       <span className='no_account'>Don't have an account? <Link to='signup' className='no_accountli' ><b>Sign up</b></Link></span>
@@ -118,6 +78,7 @@ const Signinform =()=>{
 
 
  );
- }
+}
+ 
 
 export default Signinform;
