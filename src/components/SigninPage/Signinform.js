@@ -12,8 +12,19 @@ const Signinform =()=>{
   const [pword,setPword]=useState('');
 
   const handleSubmit = (e) => {
-      e.preventDefault()
-      console.log("form is submitted");
+    e.preventDefault();
+    console.log('form is submitted');
+    if (!pword) {
+      console.log('Password is empty');
+      return;
+    }
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
+
+    if (!passwordRegex.test(pword)) {
+      console.log('Invalid password');
+      alert('Invalid password. Please ensure your password contains at least one uppercase letter, one lowercase letter, one digit, one special character, and is at least 8 characters long.');
+      return;
+    }
       axios.post('http://localhost:8000/login',
         {
         email: email,
@@ -22,11 +33,14 @@ const Signinform =()=>{
       .then((response)=>{
         console.log(response.data)
         alert("succesfully LoggedIn")
-        
-      })
+        setEmail('');
+        setPword('');
+      }) 
       .catch((err)=>{
         console.log(err.message)
         alert('error occured')
+        setEmail('');
+        setPword('');
       })  
     
   };

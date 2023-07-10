@@ -16,13 +16,18 @@ const SignupForm =()=>{
     if(password!==reenterPassword){
     alert("Invalid entry")
     }
+    else if (!validatePassword(password)) {
+      alert(
+        'Invalid password. Please ensure your password contains at least one uppercase letter, one lowercase letter, one digit, one special character, and is at least 8 characters long.'
+      );
+    }
     else{
       alert('form is submitted')
       const data = {
       email: email,
       password: password,
-      reenterPassword: reenterPassword,
-    };
+      reenterpassword: reenterPassword,
+      };
 
     axios.post('http://localhost:8000/signup', data)
     .then((response) => {
@@ -35,9 +40,16 @@ const SignupForm =()=>{
   
     .catch((error) => {
       console.error(error);
-      alert("error while sending HTTP reuest");
+      alert("user already exists");
+      setEmail('');
+      setPassword('');
+      setReenterPassword('');
     });
   }
+  };
+  const validatePassword = (password) => {
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
+    return passwordRegex.test(password);
   };
  return(
    <div className="layout_signup">
@@ -88,9 +100,6 @@ const SignupForm =()=>{
       </div>
     </div>
     
-
-
-
  );
 };
 
