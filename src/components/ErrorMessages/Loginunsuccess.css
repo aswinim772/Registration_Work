@@ -1,0 +1,142 @@
+.vector_logo_unsuccess{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 540px;
+    top: 200px;
+    }
+.loginunsuccess_message{
+position: absolute;
+width: 398px;
+height: 54px;
+left: 472px;
+top: 270px;
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 54px;
+color: #000000;
+}
+.loginmes_descrip{
+  position: absolute;
+  width: 883px;
+  height: 90px;
+  left: 165px;
+  top: 330px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  }
+  .ex_symbol{
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    left: 579.5px;
+    top: 215px;
+    
+    font-family: 'Kavoon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    }
+    
+    
+    
+    
+ @media (min-width:480px) and (max-width: 768px){
+  .vector_logo_unsuccess{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 380px;
+        top: 150px;
+        
+      }
+  .loginunsuccess_message{
+        position: absolute;
+        margin-left:-138px;
+        top: 215px;
+        font-size: 20px;
+       
+    }
+    .loginmes_descrip{
+      position: absolute;
+      width: 883px;
+      height: 90px;
+      margin-left: -163px;
+      margin-right: 360px;
+      top: 265px;
+      font-size: 15px;
+      
+    }
+    .ex_symbol{
+      position: absolute;
+      width: 20px;
+      height: 60px;
+      left: 420px;
+      top: 168px;
+      
+      font-family: 'Kavoon';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 60px;
+      text-align: center;
+      
+      color: #FFFFFF;
+      }
+      
+   
+
+    
+        
+    }
+    
+    @media(max-width:480px){
+    .vector_logo_unsuccess{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 125px;
+      top: 220px;
+    }
+    .loginunsuccess_message{
+      position: absolute;
+      margin-left:-370px;
+      top: 290px;
+      font-size: 15px;
+      }
+    .loginmes_descrip{
+      position: absolute;
+      width: 883px;
+      height: 90px;
+      left: -280px;
+      top: 320px;
+      font-size: 12px;
+     margin: 20px;
+  
+    }
+    .ex_symbol{
+      position: absolute;
+      width: 20px;
+      height: 60px;
+      left: 165px;
+      top: 232px;
+      color: #FFFFFF;
+    }
+
+
+      
+    
+    }
+    
+    
